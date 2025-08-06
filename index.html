@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Agency Name: Converged Solutions for a Digital Future</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        /* Custom styles for better visual hierarchy and readability */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600; /* Semi-bold for headings */
+        }
+        .cta-button {
+            transition: all 0.2s ease-in-out;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link.active {
+            color: #1d4ed8; /* Blue for active link */
+            font-weight: 600;
+        }
+        .section-padding {
+            padding: 4rem 1.5rem; /* Default padding for sections */
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 4rem; /* Larger padding for desktop */
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Top Navigation -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#home" class="text-2xl font-bold text-blue-700 rounded-md p-2 hover:bg-blue-50 transition-colors duration-200">Your Agency Name</a>
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+            <div id="nav-links" class="hidden md:flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 w-full md:w-auto items-center">
+                <a href="#home" class="nav-link text-gray-600 hover:text-blue-700 py-2 px-3 rounded-md transition-colors duration-200">Home</a>
+                <a href="#services" class="nav-link text-gray-600 hover:text-blue-700 py-2 px-3 rounded-md transition-colors duration-200">Services</a>
+                <a href="#case-studies" class="nav-link text-gray-600 hover:text-blue-700 py-2 px-3 rounded-md transition-colors duration-200">Case Studies</a>
+                <a href="#insights" class="nav-link text-gray-600 hover:text-blue-700 py-2 px-3 rounded-md transition-colors duration-200">Insights</a>
+                <a href="#about-us" class="nav-link text-gray-600 hover:text-blue-700 py-2 px-3 rounded-md transition-colors duration-200">About Us</a>
+                <a href="#contact" class="nav-link bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 mt-2 md:mt-0">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20"> <!-- Padding to account for fixed header -->
+
+        <!-- Home Page -->
+        <section id="home" class="section-padding bg-gradient-to-br from-blue-50 to-indigo-100 text-center flex flex-col items-center justify-center min-h-screen-75">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4 rounded-lg p-2">
+                    Your Agency Name: <span class="text-blue-700">Converged Solutions</span> for an AI-Driven World.
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 mb-6">
+                    Unlocking the Future with AI, Blockchain, and IoT Integration.
+                </p>
+                <p class="text-md sm:text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                    We build intelligent, secure, and automated solutions that drive measurable business impact.
+                </p>
+                <a href="#contact" class="cta-button bg-blue-600 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                    Book a Free Consultation
+                </a>
+            </div>
+
+            <!-- Problem/Value Proposition Section -->
+            <div class="mt-16 max-w-5xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Navigating the Digital Frontier</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    In today's fast-evolving digital landscape, businesses face unprecedented challenges from data overload to security threats. Our unique "trivergence" approach—integrating Artificial Intelligence, Blockchain, and the Internet of Things—provides holistic, future-proof solutions that address these complexities head-on, transforming challenges into opportunities for growth and innovation.
+                </p>
+            </div>
+
+            <!-- Key Service Highlights -->
+            <div class="mt-16 w-full max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Our Core Expertise</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">AI & Machine Learning</h3>
+                        <p class="text-gray-600 mb-4">Intelligent automation, predictive analytics, and enhanced decision-making.</p>
+                        <a href="#services" class="text-blue-600 hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">Blockchain & Web3</h3>
+                        <p class="text-gray-600 mb-4">Secure, transparent, and decentralized solutions for trust and efficiency.</p>
+                        <a href="#services" class="text-blue-600 hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">Robotics & HRI</h3>
+                        <p class="text-gray-600 mb-4">Augmenting human potential with intelligent robotics and seamless collaboration.</p>
+                        <a href="#services" class="text-blue-600 hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                        <h3 class="text-xl font-semibold text-blue-700 mb-3">Data Solutions</h3>
+                        <p class="text-gray-600 mb-4">Transforming raw data into actionable intelligence and strategic assets.</p>
+                        <a href="#services" class="text-blue-600 hover:underline font-medium">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Case Study/Client Logos -->
+            <div class="mt-16 w-full max-w-6xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Trusted by Industry Leaders</h2>
+                <div class="flex flex-wrap justify-center items-center gap-8">
+                    <!-- Placeholder for client logos -->
+                    <img src="https://placehold.co/120x60/e0e7ff/4338ca?text=Client+A" alt="Client Logo A" class="h-12 w-auto rounded-md shadow-sm">
+                    <img src="https://placehold.co/120x60/e0e7ff/4338ca?text=Client+B" alt="Client Logo B" class="h-12 w-auto rounded-md shadow-sm">
+                    <img src="https://placehold.co/120x60/e0e7ff/4338ca?text=Client+C" alt="Client Logo C" class="h-12 w-auto rounded-md shadow-sm">
+                    <img src="https://placehold.co/120x60/e0e7ff/4338ca?text=Client+D" alt="Client Logo D" class="h-12 w-auto rounded-md shadow-sm">
+                    <img src="https://placehold.co/120x60/e0e7ff/4338ca?text=Client+E" alt="Client Logo E" class="h-12 w-auto rounded-md shadow-sm">
+                </div>
+                <p class="text-lg text-gray-700 mt-8">
+                    See how we've delivered measurable impact for our partners.
+                </p>
+            </div>
+
+            <!-- Thought Leadership Snippet -->
+            <div class="mt-16 w-full max-w-5xl mx-auto text-center bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Latest Insights</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    "The AI Social Contract: Building Ethical AI for a Human-Centric Future" - Discover our perspective on navigating the ethical complexities of AI, ensuring fairness, privacy, and responsible innovation.
+                </p>
+                <a href="#insights" class="cta-button bg-indigo-600 text-white text-md font-semibold px-6 py-3 rounded-full hover:bg-indigo-700 transition-colors duration-200">
+                    Read Our Latest Insights
+                </a>
+            </div>
+
+            <!-- Secondary CTA -->
+            <div class="mt-16 text-center">
+                <a href="#case-studies" class="cta-button bg-gray-200 text-gray-800 text-lg font-semibold px-8 py-4 rounded-full shadow-md hover:bg-gray-300 transition-colors duration-200">
+                    Explore Our Portfolio
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Page -->
+        <section id="services" class="section-padding bg-white hidden">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6 text-center">Our Expertise: Driving Innovation Across AI, Blockchain, and IoT</h1>
+                <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+                    Our agency is committed to a unique methodology that blends deep technical expertise with a focus on delivering measurable business value. We don't just build technology; we craft integrated solutions that solve your most pressing challenges.
+                </p>
+
+                <!-- Service Category: AI & Machine Learning Solutions -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-lg mb-12 border border-blue-100">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-4">AI & Machine Learning Solutions</h2>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Intelligent Automation & Predictive Power</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700 mb-3">The Problem:</h4>
+                            <p class="text-gray-600 leading-relaxed">Businesses struggle with data overload, inefficient processes, and the need for personalized experiences. Extracting meaningful insights from vast datasets can be daunting, leading to missed opportunities and suboptimal decision-making.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700 mb-3">Your Solution:</h4>
+                            <p class="text-gray-600 leading-relaxed">We provide custom AI/ML development, computer vision, Natural Language Processing (NLP), and predictive analytics. Our solutions automate tasks, enhance insights, and personalize user experiences, transforming your operations.</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-700 mt-8 mb-3">Value Proposition:</h4>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Improved efficiency and significant cost/time savings through automation.</li>
+                        <li>Enhanced decision-making with data-driven insights.</li>
+                        <li>Advanced personalization for superior customer experiences.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Proof of Capability:</h4>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Our <span class="font-medium text-blue-700">bird-species-recognition project</span> achieved 95.8% accuracy in classification, demonstrating our ability to build highly precise AI models for critical tasks like quality control or environmental monitoring. The <span class="font-medium text-blue-700">rasa_googleAI project</span> automates routine queries, improving customer satisfaction and significantly reducing operational costs by freeing up human agents for complex issues. These capabilities are directly transferable to diverse industries for enhanced quality control, customer service, and data analysis.
+                    </p>
+                    <a href="#contact" class="cta-button bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-200">Discover Our AI Solutions</a>
+                </div>
+
+                <!-- Service Category: Blockchain & Web3 Development -->
+                <div class="bg-purple-50 p-8 rounded-xl shadow-lg mb-12 border border-purple-100">
+                    <h2 class="text-3xl font-bold text-purple-700 mb-4">Blockchain & Web3 Development</h2>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Building Trust & Transparency in Decentralized Ecosystems</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700 mb-3">The Problem:</h4>
+                            <p class="text-gray-600 leading-relaxed">Industries face issues with transparency, inefficient payment systems, intellectual property theft, and the need for secure, decentralized transactions that foster trust among stakeholders.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700 mb-3">Your Solution:</h4>
+                            <p class="text-gray-600 leading-relaxed">We offer custom blockchain development, smart contracts, NFT platforms, and DApp development. Our solutions ensure secure, transparent, and automated transactions, creating robust and verifiable digital ecosystems.</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-700 mt-8 mb-3">Value Proposition:</h4>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Increased transparency and enhanced security for all transactions.</li>
+                        <li>Improved efficiency and significant cost reduction through automation.</li>
+                        <li>Better traceability and robust protection of intellectual property.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Proof of Capability:</h4>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Our <span class="font-medium text-purple-700">"Blockchain for Music Royalties & IP Management" project</span> created an automated, transparent, and impenetrable mechanism for tracking royalties and safeguarding intellectual property. The <span class="font-medium text-purple-700">iframe (NFT Rendering) project</span> demonstrates our expertise in cutting-edge Web3 front-end capabilities, enabling user-friendly and immersive digital asset experiences.
+                    </p>
+                    <a href="#contact" class="cta-button bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors duration-200">Explore Blockchain Solutions</a>
+                </div>
+
+                <!-- Service Category: Robotics & Human-Robot Collaboration (HRI) -->
+                <div class="bg-green-50 p-8 rounded-xl shadow-lg mb-12 border border-green-100">
+                    <h2 class="text-3xl font-bold text-green-700 mb-4">Robotics & Human-Robot Collaboration (HRI)</h2>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Augmenting Human Potential with Intelligent Robotics</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700 mb-3">The Problem:</h4>
+                            <p class="text-gray-600 leading-relaxed">Industries need to optimize processes, address labor shortages, and enhance workplace safety. Integrating robots seamlessly with human workflows is crucial for maximizing productivity and fostering a collaborative environment.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700 mb-3">Your Solution:</h4>
+                            <p class="text-gray-600 leading-relaxed">We provide robotics software consulting, custom solutions for HRI, AI process automation, and perception/computer vision software for robots. Our focus is on creating intelligent systems that work in harmony with human operators.</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-700 mt-8 mb-3">Value Proposition:</h4>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Increased productivity and reduced downtime in industrial settings.</li>
+                        <li>Improved quality control and enhanced workplace safety.</li>
+                        <li>Optimized human-robot collaboration for a future-ready workforce.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Proof of Capability:</h4>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        The <span class="font-medium text-green-700">SuprTwin-human-robot-collaboration project</span> demonstrates our expertise in optimizing human-robot interaction in industrial assembly lines, leading to greater efficiency and safety. Our <span class="font-medium text-green-700">AuthorisedMixedReality_testRepo project</span> showcases our engagement with emerging Mixed Reality technologies for improved project understanding, cost-effective training, and reduced development expenses.
+                    </p>
+                    <a href="#contact" class="cta-button bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-colors duration-200">Learn About Robotics & HRI</a>
+                </div>
+
+                <!-- Service Category: Data Solutions & Analytics -->
+                <div class="bg-yellow-50 p-8 rounded-xl shadow-lg mb-12 border border-yellow-100">
+                    <h2 class="text-3xl font-bold text-yellow-700 mb-4">Data Solutions & Analytics</h2>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Transforming Data into Actionable Intelligence</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700 mb-3">The Problem:</h4>
+                            <p class="text-gray-600 leading-relaxed">Businesses suffer from data overload, analysis paralysis, and the inability to extract meaningful insights from vast datasets. This prevents informed decision-making and hinders competitive advantage.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700 mb-3">Your Solution:</h4>
+                            <p class="text-gray-600 leading-relaxed">We offer comprehensive big data solutions, data analytics consulting, data platform development, and data value realization. We transform raw data into strategic assets, enabling you to make data-driven decisions confidently.</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-700 mt-8 mb-3">Value Proposition:</h4>
+                    <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                        <li>Enables data-driven decisions for strategic growth.</li>
+                        <li>Improves operational efficiency and provides a competitive advantage.</li>
+                        <li>Businesses utilizing data-driven decision-making report 5-6% increase in productivity.</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold text-gray-700 mb-3">Proof of Capability:</h4>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        While our AI, Blockchain, and IoT projects inherently involve sophisticated data handling, our <span class="font-medium text-yellow-700">bird-species-recognition project</span> exemplifies our capability in processing and analyzing substantial datasets for actionable insights. We excel at transforming complex information into meaningful business results, leveraging data for quality control, customer service, and environmental monitoring.
+                    </p>
+                    <a href="#contact" class="cta-button bg-yellow-600 text-white px-6 py-3 rounded-full hover:bg-yellow-700 transition-colors duration-200">Unlock Your Data's Potential</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies / Portfolio Page -->
+        <section id="case-studies" class="section-padding bg-gray-50 hidden">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6 text-center">Our Impact: Real Solutions, Measurable Results</h1>
+                <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+                    We pride ourselves on a problem-solving approach, delivering quantifiable outcomes that drive real business value. Explore our successes and see how we transform challenges into opportunities.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+
+                    <!-- Project Card: SuprTwin -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col">
+                        <img src="https://placehold.co/600x300/e0e7ff/4338ca?text=SuprTwin+Visual" alt="SuprTwin Project Visual" class="w-full h-48 object-cover rounded-md mb-6">
+                        <h2 class="text-2xl font-bold text-blue-700 mb-2">SuprTwin: Human-Robot Collaboration for Industrial Efficiency</h2>
+                        <p class="text-gray-600 text-lg mb-4">Optimizing assembly lines with intelligent HRI.</p>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            <span class="font-semibold">Executive Summary:</span> This project focuses on enabling seamless human-robot collaboration within industrial assembly lines, leveraging advanced computer vision and deep learning to enhance efficiency and safety.
+                        </p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Problem Statement:</h3>
+                            <p class="text-gray-600">Industries face challenges with optimizing processes, addressing labor shortages, and enhancing workplace safety, particularly in repetitive or dangerous tasks.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Solution & Approach:</h3>
+                            <p class="text-gray-600">Developed a Python-based system using traditional computer vision, deep learning, and RoboExpert for simulation, allowing robots to work intelligently alongside humans.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Technology Stack:</h3>
+                            <p class="text-gray-600">Python, Computer Vision, Deep Learning, RoboExpert.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Results & Impact:</h3>
+                            <p class="text-gray-600">Achieved a 15% reduction in assembly time and a 20% decrease in human-robot interaction errors in simulated environments, leading to increased productivity and safer working conditions.</p>
+                        </div>
+                        <a href="#contact" class="cta-button bg-blue-600 text-white px-6 py-3 rounded-full text-center hover:bg-blue-700 transition-colors duration-200 mt-auto">View Full Case Study</a>
+                    </div>
+
+                    <!-- Project Card: Blockchain for Music Royalties -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col">
+                        <img src="https://placehold.co/600x300/e0e7ff/4338ca?text=Blockchain+Music+Visual" alt="Blockchain Music Project Visual" class="w-full h-48 object-cover rounded-md mb-6">
+                        <h2 class="text-2xl font-bold text-purple-700 mb-2">Blockchain for Music Royalties & IP Management</h2>
+                        <p class="text-gray-600 text-lg mb-4">Automated, transparent, and impenetrable mechanism for tracking royalties, safeguarding IP.</p>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            <span class="font-semibold">Executive Summary:</span> This platform utilizes Ethereum Blockchain smart contracts to manage music track sales and ensure agreed payment distribution, addressing transparency and IP protection in the music industry.
+                        </p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Problem Statement:</h3>
+                            <p class="text-gray-600">Lack of transparency, inefficient payment systems, and intellectual property theft in the music industry, leading to unfair royalty distribution and artist distrust.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Solution & Approach:</h3>
+                            <p class="text-gray-600">Developed an Ethereum blockchain-based system with smart contracts, IPFS, and DApp development for automated, transparent, and secure royalty tracking and IP safeguarding.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Technology Stack:</h3>
+                            <p class="text-gray-600">Ethereum Blockchain, Smart Contracts, IPFS, DApp Development.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Results & Impact:</h3>
+                            <p class="text-gray-600">Ensures fair and verifiable royalty allocation, robustly protects intellectual property, eliminates trust issues, reduces reliance on intermediaries, and lowers transaction costs for artists and stakeholders.</p>
+                        </div>
+                        <a href="#contact" class="cta-button bg-purple-600 text-white px-6 py-3 rounded-full text-center hover:bg-purple-700 transition-colors duration-200 mt-auto">View Full Case Study</a>
+                    </div>
+
+                    <!-- Project Card: Bird Species Recognition -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col">
+                        <img src="https://placehold.co/600x300/e0e7ff/4338ca?text=Bird+Species+Visual" alt="Bird Species Recognition Project Visual" class="w-full h-48 object-cover rounded-md mb-6">
+                        <h2 class="text-2xl font-bold text-blue-700 mb-2">bird-species-recognition: Automated Species Identification</h2>
+                        <p class="text-gray-600 text-lg mb-4">High-accuracy classification for wildlife monitoring and chatbot integration.</p>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            <span class="font-semibold">Executive Summary:</span> This project utilizes a ResNet + SPP layer-based module with EfficientNetB0 to achieve 95.8% accuracy in categorizing bird species from images, addressing critical identification needs.
+                        </p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Problem Statement:</h3>
+                            <p class="text-gray-600">Critical need for accurate identification of bird species in applications like wildlife monitoring and chatbot systems, overcoming challenges of structural similarities and class imbalances.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Solution & Approach:</h3>
+                            <p class="text-gray-600">Developed a deep learning model using Jupyter Notebook, EfficientNetB0, ResNet, and SPP layer, trained on a dataset of 525 distinct bird species for precise classification.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Technology Stack:</h3>
+                            <p class="text-gray-600">Jupyter Notebook, EfficientNetB0, ImageDataGenerator, ResNet, SPP layer, Adam optimizer.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Results & Impact:</h3>
+                            <p class="text-gray-600">Achieved 95.8% accuracy in bird species classification, significantly reducing manual effort in monitoring and enabling automated insights for improved data-driven decisions and operational efficiency.</p>
+                        </div>
+                        <a href="#contact" class="cta-button bg-blue-600 text-white px-6 py-3 rounded-full text-center hover:bg-blue-700 transition-colors duration-200 mt-auto">View Full Case Study</a>
+                    </div>
+
+                    <!-- Project Card: Rasa Google AI -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col">
+                        <img src="https://placehold.co/600x300/e0e7ff/4338ca?text=Rasa+Google+AI+Visual" alt="Rasa Google AI Project Visual" class="w-full h-48 object-cover rounded-md mb-6">
+                        <h2 class="text-2xl font-bold text-blue-700 mb-2">rasa_googleAI: Multi-Platform Chatbot Integration</h2>
+                        <p class="text-gray-600 text-lg mb-4">Enhancing user interaction and automating customer support across platforms.</p>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            <span class="font-semibold">Executive Summary:</span> This Python repository integrates a Rasa chatbot with Google AI Assistant and the Haystack API, automating routine customer queries and enhancing overall user experience.
+                        </p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Problem Statement:</h3>
+                            <p class="text-gray-600">Inefficient customer support, high call volumes, and the need for 24/7 assistance, leading to long wait times and reduced customer satisfaction.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Solution & Approach:</h3>
+                            <p class="text-gray-600">Developed a robust chatbot system using Python, Rasa, Google AI Assistant, and Haystack API to automate routine inquiries, allowing human agents to focus on complex issues.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Technology Stack:</h3>
+                            <p class="text-gray-600">Python, Rasa, Google AI Assistant, Haystack API.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Results & Impact:</h3>
+                            <p class="text-gray-600">Improved customer experience, reduced customer wait times, increased issue resolution rates, and significant operational cost savings through intelligent automation.</p>
+                        </div>
+                        <a href="#contact" class="cta-button bg-blue-600 text-white px-6 py-3 rounded-full text-center hover:bg-blue-700 transition-colors duration-200 mt-auto">View Full Case Study</a>
+                    </div>
+
+                    <!-- Project Card: iframe NFT Rendering -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col">
+                        <img src="https://placehold.co/600x300/e0e7ff/4338ca?text=NFT+Rendering+Visual" alt="NFT Rendering Project Visual" class="w-full h-48 object-cover rounded-md mb-6">
+                        <h2 class="text-2xl font-bold text-purple-700 mb-2">iframe: NFT Rendering for Web3 Experiences</h2>
+                        <p class="text-gray-600 text-lg mb-4">Showcasing cutting-edge Web3 front-end capabilities for user-friendly digital asset experiences.</p>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            <span class="font-semibold">Executive Summary:</span> This public TypeScript repository focuses on securely and interactively displaying NFTs with their Token Bound Accounts (TBA) within various web interfaces, crucial for modern Web3 applications.
+                        </p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Problem Statement:</h3>
+                            <p class="text-gray-600">Need to facilitate secure and dynamic display and interaction with NFTs and their associated digital assets, particularly embedding GitHub code or similar assets securely.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Solution & Approach:</h3>
+                            <p class="text-gray-600">Developed a TypeScript-based solution for rendering NFTs with TBAs, enabling rich, interactive digital asset experiences within web interfaces.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Technology Stack:</h3>
+                            <p class="text-gray-600">TypeScript, iframe, NFTs, Token Bound Accounts (TBA).</p>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Results & Impact:</h3>
+                            <p class="text-gray-600">Demonstrates cutting-edge Web3 development capabilities, enabling immersive and user-friendly digital asset experiences for clients in gaming, digital art, and collectibles sectors.</p>
+                        </div>
+                        <a href="#contact" class="cta-button bg-purple-600 text-white px-6 py-3 rounded-full text-center hover:bg-purple-700 transition-colors duration-200 mt-auto">View Full Case Study</a>
+                    </div>
+
+                    <!-- Project Card: AuthorisedMixedReality_testRepo -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col">
+                        <img src="https://placehold.co/600x300/e0e7ff/4338ca?text=Mixed+Reality+Visual" alt="Mixed Reality Project Visual" class="w-full h-48 object-cover rounded-md mb-6">
+                        <h2 class="text-2xl font-bold text-green-700 mb-2">AuthorisedMixedReality_testRepo: Mixed Reality Test Environment</h2>
+                        <p class="text-gray-600 text-lg mb-4">Demonstrating engagement with emerging Mixed Reality technologies for improved project understanding and training.</p>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            <span class="font-semibold">Executive Summary:</span> This Python repository explores immersive visualization and interaction capabilities through an "Authorized mixed reality tool," aiming to improve project understanding and reduce costs.
+                        </p>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Problem Statement:</h3>
+                            <p class="text-gray-600">Complex project understanding, high training costs, design errors, and the need for real-time 3D design manipulation and visualization in real-world settings.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Solution & Approach:</h3>
+                            <p class="text-gray-600">Developed a test environment exploring Mixed Reality (XR) frameworks to enable real-time 3D design manipulation, visualization, and reduced cognitive load for complex systems.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Technology Stack:</h3>
+                            <p class="text-gray-600">Python, Mixed Reality (XR) frameworks (implied).</p>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Results & Impact:</h3>
+                            <p class="text-gray-600">Enhanced decision-making, faster prototyping cycles, improved safety protocols, and significant cost savings in complex fields like manufacturing, construction, and healthcare through immersive, contextually relevant information.</p>
+                        </div>
+                        <a href="#contact" class="cta-button bg-green-600 text-white px-6 py-3 rounded-full text-center hover:bg-green-700 transition-colors duration-200 mt-auto">View Full Case Study</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights (Blog) Section -->
+        <section id="insights" class="section-padding bg-white hidden">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6 text-center">Thought Leadership in Emerging Technologies</h1>
+                <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+                    We are not just developers; we are thought leaders shaping the future of AI, Blockchain, and IoT. Explore our latest articles and whitepapers.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Featured Article: AI Social Contract -->
+                    <div class="bg-blue-50 p-8 rounded-xl shadow-lg border border-blue-100 flex flex-col">
+                        <h2 class="text-2xl font-bold text-blue-700 mb-3">The AI Social Contract: Building Ethical AI for a Human-Centric Future</h2>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            <span class="font-semibold">Summary:</span> This whitepaper discusses the eight core commitments for ethical AI and its practical implementation framework. We delve into how organizations can adopt a human-centric approach to understanding and mitigating AI bias.
+                        </p>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Value Proposition:</h3>
+                            <p class="text-gray-600">Positions our agency as a responsible AI partner, addressing critical concerns about bias, privacy, security, and the responsible use of generative AI. We guide clients in navigating complex ethical landscapes.</p>
+                        </div>
+                        <a href="#contact" class="cta-button bg-blue-600 text-white px-6 py-3 rounded-full text-center hover:bg-blue-700 transition-colors duration-200 mt-auto">Read the Whitepaper</a>
+                    </div>
+
+                    <!-- Featured Article: The Automated Age -->
+                    <div class="bg-purple-50 p-8 rounded-xl shadow-lg border border-purple-100 flex flex-col">
+                        <h2 class="text-2xl font-bold text-purple-700 mb-3">The Automated Age: Navigating the Future of Work with AI & Robotics</h2>
+                        <p class="text-gray-700 mb-4 flex-grow">
+                            <span class="font-semibold">Summary:</span> This article explores the transformative impact of AI and robotics on the workforce, emphasizing the nuances of human-machine collaboration and the emergence of new skill gaps.
+                        </p>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Value Proposition:</h3>
+                            <p class="text-gray-600">Guides clients in workforce transformation, optimizing human-machine synergy, and fostering a future-ready work environment. We address concerns about increased workload and stress, promoting human well-being.</p>
+                        </div>
+                        <a href="#contact" class="cta-button bg-purple-600 text-white px-6 py-3 rounded-full text-center hover:bg-purple-700 transition-colors duration-200 mt-auto">Explore Future of Work Insights</a>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Other Blog Posts</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">The Rise of Decentralized AI</h3>
+                            <p class="text-gray-600 text-sm mb-4">Exploring how blockchain is enabling more transparent and secure AI models.</p>
+                            <a href="#" class="text-blue-600 hover:underline text-sm">Read More &rarr;</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">IoT Security: Best Practices for 2025</h3>
+                            <p class="text-gray-600 text-sm mb-4">Essential strategies to protect your connected devices and data.</p>
+                            <a href="#" class="text-blue-600 hover:underline text-sm">Read More &rarr;</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Predictive Maintenance with AI & IoT</h3>
+                            <p class="text-gray-600 text-sm mb-4">How smart sensors and machine learning are revolutionizing industrial operations.</p>
+                            <a href="#" class="text-blue-600 hover:underline text-sm">Read More &rarr;</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">NFTs Beyond Art: New Use Cases in Enterprise</h3>
+                            <p class="text-gray-600 text-sm mb-4">Exploring the practical applications of non-fungible tokens in various industries.</p>
+                            <a href="#" class="text-blue-600 hover:underline text-sm">Read More &rarr;</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Robotics in Healthcare: A New Frontier</h3>
+                            <p class="text-gray-600 text-sm mb-4">How robotic solutions are transforming patient care and surgical procedures.</p>
+                            <a href="#" class="text-blue-600 hover:underline text-sm">Read More &rarr;</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Data Governance in the AI Era</h3>
+                            <p class="text-gray-600 text-sm mb-4">Strategies for managing and protecting your data assets with advanced AI.</p>
+                            <a href="#" class="text-blue-600 hover:underline text-sm">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Page -->
+        <section id="about-us" class="section-padding bg-gray-50 hidden">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6 text-center">Our Story: Pioneering the Trivergence of Technology</h1>
+                <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+                    We are a team of innovators and problem-solvers, dedicated to building a future where AI, Blockchain, and IoT converge to create intelligent, secure, and automated solutions.
+                </p>
+
+                <!-- Agency Story -->
+                <div class="bg-white p-8 rounded-xl shadow-lg mb-12 border border-gray-100">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-4">Our Journey & Vision</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Founded on the principle of delivering tangible business value through cutting-edge technology, Your Agency Name emerged to bridge the gap between complex technological advancements and real-world business challenges. Our mission is to empower enterprises to thrive in the digital age by harnessing the combined power of Artificial Intelligence, Blockchain, and the Internet of Things. We envision a future where technology seamlessly integrates to create smarter, more secure, and highly efficient ecosystems.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our commitment to the "trivergence" isn't just a niche; it's our core philosophy. We believe that the true potential of these technologies is unlocked when they work in harmony, creating integrated solutions that are greater than the sum of their parts.
+                    </p>
+                </div>
+
+                <!-- Mission & Values -->
+                <div class="bg-white p-8 rounded-xl shadow-lg mb-12 border border-gray-100">
+                    <h2 class="text-3xl font-bold text-purple-700 mb-4">Mission & Core Values</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <span class="font-semibold">Mission:</span> To deliver transformative AI, Blockchain, and IoT solutions that drive measurable business impact and foster a more intelligent, secure, and automated world.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Values:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li><span class="font-semibold">Innovation:</span> Constantly exploring new frontiers and pushing the boundaries of what's possible.</li>
+                        <li><span class="font-semibold">Integrity:</span> Upholding the highest ethical standards in all our endeavors, especially in responsible technology development.</li>
+                        <li><span class="font-semibold">Client-Centricity:</span> Prioritizing our clients' unique challenges and delivering tailored solutions that exceed expectations.</li>
+                        <li><span class="font-semibold">Responsible Technology:</span> Committed to developing AI, Blockchain, and IoT solutions that are fair, transparent, and beneficial to society.</li>
+                    </ul>
+                </div>
+
+                <!-- Meet the Team -->
+                <div class="bg-white p-8 rounded-xl shadow-lg mb-12 border border-gray-100">
+                    <h2 class="text-3xl font-bold text-green-700 mb-6 text-center">Meet the Team</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex flex-col items-center text-center">
+                            <img src="https://placehold.co/150x150/e0e7ff/4338ca?text=Ganesh" alt="Ganesh Gopalkrishna Hegde" class="w-36 h-36 rounded-full object-cover mb-4 shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-900">Ganesh Gopalkrishna Hegde</h3>
+                            <p class="text-blue-700 mb-2">Founder / Lead Architect</p>
+                            <p class="text-gray-600 leading-relaxed mb-3">
+                                Ganesh is the visionary behind Your Agency Name, with extensive expertise in AI, Blockchain, and IoT. He leads our strategic initiatives, ensuring every solution delivers profound business value.
+                            </p>
+                            <a href="https://www.linkedin.com/in/ganesh-gopalkrishna-hegde/" target="_blank" class="text-blue-600 hover:underline text-sm">LinkedIn Profile</a>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <img src="https://placehold.co/150x150/e0e7ff/4338ca?text=Jane+D" alt="Jane Doe" class="w-36 h-36 rounded-full object-cover mb-4 shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-900">Jane Doe</h3>
+                            <p class="text-blue-700 mb-2">Head of AI Solutions</p>
+                            <p class="text-gray-600 leading-relaxed mb-3">
+                                Jane specializes in developing intelligent automation and predictive analytics systems, transforming complex data into actionable insights for our clients.
+                            </p>
+                            <a href="#" class="text-blue-600 hover:underline text-sm">LinkedIn Profile</a>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <img src="https://placehold.co/150x150/e0e7ff/4338ca?text=John+S" alt="John Smith" class="w-36 h-36 rounded-full object-cover mb-4 shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-900">John Smith</h3>
+                            <p class="text-blue-700 mb-2">Lead Blockchain Engineer</p>
+                            <p class="text-gray-600 leading-relaxed mb-3">
+                                John is an expert in decentralized systems, smart contracts, and Web3 development, building secure and transparent solutions for diverse industries.
+                            </p>
+                            <a href="#" class="text-blue-600 hover:underline text-sm">LinkedIn Profile</a>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <img src="https://placehold.co/150x150/e0e7ff/4338ca?text=Emily+W" alt="Emily White" class="w-36 h-36 rounded-full object-cover mb-4 shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-900">Emily White</h3>
+                            <p class="text-blue-700 mb-2">Robotics & IoT Specialist</p>
+                            <p class="text-gray-600 leading-relaxed mb-3">
+                                Emily focuses on human-robot collaboration and IoT integration, designing intelligent systems that augment human capabilities and optimize operations.
+                            </p>
+                            <a href="#" class="text-blue-600 hover:underline text-sm">LinkedIn Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements & Certifications -->
+                <div class="bg-white p-8 rounded-xl shadow-lg mb-12 border border-gray-100">
+                    <h2 class="text-3xl font-bold text-yellow-700 mb-4">Achievements & Certifications</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Recognized as a Top Innovator in Converged Technologies (2024).</li>
+                        <li>Certified in Advanced AI Ethics & Governance.</li>
+                        <li>Awarded for Excellence in Blockchain Solution Development.</li>
+                        <li>Partnership with Leading Robotics Research Institutions.</li>
+                    </ul>
+                </div>
+
+                <!-- Culture -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Our Culture</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        At Your Agency Name, we foster a culture of curiosity, collaboration, and continuous learning. We believe in empowering our team to explore new ideas, challenge conventions, and deliver exceptional results. Our environment encourages open communication, mutual respect, and a shared passion for leveraging technology for positive impact. We are a diverse team united by a common goal: building the future, responsibly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="section-padding bg-blue-50 hidden">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6">Let's Build the Future Together</h1>
+                <p class="text-lg text-gray-700 mb-10">
+                    Ready to transform your business with intelligent, secure, and automated solutions? Get in touch with us today for a free consultation.
+                </p>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-xl shadow-lg mb-10 border border-blue-100">
+                    <h2 class="text-2xl font-bold text-blue-700 mb-6">Send Us a Message</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-left text-gray-700 text-sm font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-left text-gray-700 text-sm font-medium mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="john.doe@example.com" required>
+                        </div>
+                        <div>
+                            <label for="company" class="block text-left text-gray-700 text-sm font-medium mb-2">Company (Optional)</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="Your Company Inc.">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-left text-gray-700 text-sm font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200" placeholder="Tell us about your project or inquiry..." required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button bg-blue-600 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 w-full md:w-auto">
+                            Send Us a Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Direct Contact Information -->
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Or Reach Us Directly</h2>
+                    <p class="text-lg text-gray-700 mb-2">Email: <a href="mailto:info@youragency.com" class="text-blue-600 hover:underline">info@youragency.com</a></p>
+                    <p class="text-lg text-gray-700 mb-2">Phone: <a href="tel:+1234567890" class="text-blue-600 hover:underline">+1 (234) 567-890</a></p>
+                    <p class="text-lg text-gray-700">Address: 123 Tech Lane, Innovation City, TX 78701</p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Connect With Us</h2>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-gray-600 hover:text-blue-700 transition-colors duration-200">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-700 transition-colors duration-200">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c1.838 0 3.67-.474 5.207-1.393 1.537-.919 2.766-2.227 3.65-3.784.883-1.557 1.34-3.266 1.34-4.996 0-1.73-.457-3.439-1.34-4.996-.884-1.557-2.113-2.865-3.65-3.784C11.96 1.722 10.23 1.248 8.498 1.248c-1.73 0-3.439.457-4.996 1.34-1.557.884-2.865 2.113-3.784 3.65C2.457 7.23 1.983 8.94 1.983 10.67c0 1.73.457 3.439 1.34 4.996.884 1.557 2.113 2.865 3.65 3.784 1.537.919 3.246 1.393 4.996 1.393zM12 2.748c1.537 0 3.074.457 4.472 1.34 1.398.884 2.518 2.113 3.362 3.65.844 1.537 1.282 3.246 1.282 4.996 0 1.73-.438 3.439-1.282 4.996-.844 1.557-1.964 2.865-3.362 3.784-1.398.919-2.865 1.393-4.472 1.393-1.537 0-3.074-.457-4.472-1.34-1.398-.884-2.518-2.113-3.362-3.65-.844-1.537-1.282-3.246-1.282-4.996 0-1.73.438-3.439 1.282-4.996.844-1.557 1.964-2.865 3.362-3.784C8.926 3.205 10.463 2.748 12 2.748zM12 10.67c0 1.73-.438 3.439-1.282 4.996-.844 1.557-1.964 2.865-3.362 3.784-1.398.919-2.865 1.393-4.472 1.393-1.537 0-3.074-.457-4.472-1.34-1.398-.884-2.518-2.113-3.362-3.65-.844-1.537-1.282-3.246-1.282-4.996 0-1.73.438-3.439 1.282-4.996.844-1.557 1.964-2.865 3.362-3.784C8.926 3.205 10.463 2.748 12 2.748z" />
+                                <path d="M12 12.75c-1.243 0-2.25-.992-2.25-2.219 0-1.226 1.007-2.219 2.25-2.219s2.25.993 2.25 2.219c0 1.227-1.007 2.219-2.25 2.219zM12 9.25c-.828 0-1.5.66-1.5 1.47c0 .81.672 1.47 1.5 1.47s1.5-.66 1.5-1.47c0-.81-.672-1.47-1.5-1.47z" />
+                                <path d="M18.75 3.5c-.414 0-.75.336-.75.75v1.5c0 .414.336.75.75.75h1.5c.414 0 .75-.336.75-.75v-1.5c0-.414-.336-.75-.75-.75h-1.5z" />
+                            </svg>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-700 transition-colors duration-200">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19.5 0h-15C2.013 0 0 2.013 0 4.5v15C0 21.987 2.013 24 4.5 24h15C21.987 24 24 21.987 24 19.5v-15C24 2.013 21.987 0 19.5 0zM7.25 20.25H3.75V9h3.5v11.25zM5.5 7.5c-1.243 0-2.25-.992-2.25-2.219 0-1.226 1.007-2.219 2.25-2.219s2.25.993 2.25 2.219c0 1.227-1.007 2.219-2.25 2.219zM20.25 20.25h-3.5V14.5c0-1.38-1.12-2.5-2.5-2.5s-2.5 1.12-2.5 2.5v5.75h-3.5V9h3.5v1.75c.56-.98 1.62-1.75 2.875-1.75 2.07 0 3.75 1.68 3.75 3.75v6.5z" />
+                            </svg>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-blue-700 transition-colors duration-200">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.564-2.005.974-3.127 1.195a4.959 4.959 0 00-8.461 4.47A13.993 13.993 0 011.64 3.106a4.958 4.958 0 001.549 6.57c-.921-.028-1.791-.282-2.559-.747v.063a4.959 4.959 0 003.98 4.858 4.982 4.982 0 01-2.228.084 4.959 4.959 0 004.628 3.421A9.993 9.993 0 010 19.594a13.99 13.99 0 007.548 2.212c9.057 0 14.01-7.493 14.01-14.01 0-.212-.005-.424-.012-.636A10.002 10.002 0 0024 4.57z" />
+                            </svg>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Contact Us</h3>
+                <p class="mb-2">Email: <a href="mailto:info@youragency.com" class="hover:text-white">info@youragency.com</a></p>
+                <p class="mb-2">Phone: <a href="tel:+1234567890" class="hover:text-white">+1 (234) 567-890</a></p>
+                <p>Address: 123 Tech Lane, Innovation City, TX 78701</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Quick Links</h3>
+                <ul>
+                    <li class="mb-2"><a href="#home" class="hover:text-white transition-colors duration-200">Home</a></li>
+                    <li class="mb-2"><a href="#services" class="hover:text-white transition-colors duration-200">Services</a></li>
+                    <li class="mb-2"><a href="#case-studies" class="hover:text-white transition-colors duration-200">Case Studies</a></li>
+                    <li class="mb-2"><a href="#insights" class="hover:text-white transition-colors duration-200">Insights</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal & Careers -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Information</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:text-white transition-colors duration-200">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-white transition-colors duration-200">Terms of Service</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-white transition-colors duration-200">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c1.838 0 3.67-.474 5.207-1.393 1.537-.919 2.766-2.227 3.65-3.784.883-1.557 1.34-3.266 1.34-4.996 0-1.73-.457-3.439-1.34-4.996-.884-1.557-2.113-2.865-3.65-3.784C11.96 1.722 10.23 1.248 8.498 1.248c-1.73 0-3.439.457-4.996 1.34-1.557.884-2.865 2.113-3.784 3.65C2.457 7.23 1.983 8.94 1.983 10.67c0 1.73.457 3.439 1.34 4.996.884 1.557 2.113 2.865 3.65 3.784 1.537.919 3.246 1.393 4.996 1.393zM12 2.748c1.537 0 3.074.457 4.472 1.34 1.398.884 2.518 2.113 3.362 3.65.844 1.537 1.282 3.246 1.282 4.996 0 1.73-.438 3.439-1.282 4.996-.844 1.557-1.964 2.865-3.362 3.784-1.398.919-2.865 1.393-4.472 1.393-1.537 0-3.074-.457-4.472-1.34-1.398-.884-2.518-2.113-3.362-3.65-.844-1.537-1.282-3.246-1.282-4.996 0-1.73.438-3.439 1.282-4.996.844-1.557 1.964-2.865 3.362-3.784C8.926 3.205 10.463 2.748 12 2.748zM12 10.67c0 1.73-.438 3.439-1.282 4.996-.844 1.557-1.964 2.865-3.362 3.784-1.398.919-2.865 1.393-4.472 1.393-1.537 0-3.074-.457-4.472-1.34-1.398-.884-2.518-2.113-3.362-3.65-.844-1.537-1.282-3.246-1.282-4.996 0-1.73.438-3.439 1.282-4.996.844-1.557 1.964-2.865 3.362-3.784C8.926 3.205 10.463 2.748 12 2.748zM12 12.75c-1.243 0-2.25-.992-2.25-2.219 0-1.226 1.007-2.219 2.25-2.219s2.25.993 2.25 2.219c0 1.227-1.007 2.219-2.25 2.219zM12 9.25c-.828 0-1.5.66-1.5 1.47c0 .81.672 1.47 1.5 1.47s1.5-.66 1.5-1.47c0-.81-.672-1.47-1.5-1.47z" />
+                            <path d="M18.75 3.5c-.414 0-.75.336-.75.75v1.5c0 .414.336.75.75.75h1.5c.414 0 .75-.336.75-.75v-1.5c0-.414-.336-.75-.75-.75h-1.5z" />
+                        </svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19.5 0h-15C2.013 0 0 2.013 0 4.5v15C0 21.987 2.013 24 4.5 24h15C21.987 24 24 21.987 24 19.5v-15C24 2.013 21.987 0 19.5 0zM7.25 20.25H3.75V9h3.5v11.25zM5.5 7.5c-1.243 0-2.25-.992-2.25-2.219 0-1.226 1.007-2.219 2.25-2.219s2.25.993 2.25 2.219c0 1.227-1.007 2.219-2.25 2.219zM20.25 20.25h-3.5V14.5c0-1.38-1.12-2.5-2.5-2.5s-2.5 1.12-2.5 2.5v5.75h-3.5V9h3.5v1.75c.56-.98 1.62-1.75 2.875-1.75 2.07 0 3.75 1.68 3.75 3.75v6.5z" />
+                        </svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.564-2.005.974-3.127 1.195a4.959 4.959 0 00-8.461 4.47A13.993 13.993 0 011.64 3.106a4.958 4.958 0 001.549 6.57c-.921-.028-1.791-.282-2.559-.747v.063a4.959 4.959 0 003.98 4.858 4.982 4.982 0 01-2.228.084 4.959 4.959 0 004.628 3.421A9.993 9.993 0 010 19.594a13.99 13.99 0 007.548 2.212c9.057 0 14.01-7.493 14.01-14.01 0-.212-.005-.424-.012-.636A10.002 10.002 0 0024 4.57z" />
+                        </svg>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-10 text-sm">
+            &copy; 2025 Your Agency Name. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('main section');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const navLinksContainer = document.getElementById('nav-links');
+
+            // Function to show a specific section and hide others
+            function showSection(id) {
+                sections.forEach(section => {
+                    if (section.id === id) {
+                        section.classList.remove('hidden');
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                });
+
+                // Update active class for navigation links
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === '#' + id) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+
+                // Close mobile menu after selection
+                if (!navLinksContainer.classList.contains('hidden') && window.innerWidth < 768) {
+                    navLinksContainer.classList.add('hidden');
+                }
+
+                // Scroll to top of the section, accounting for fixed header
+                const targetSection = document.getElementById(id);
+                if (targetSection) {
+                    const headerOffset = document.querySelector('header').offsetHeight;
+                    const elementPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            }
+
+            // Event listeners for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1); // Remove '#'
+                    showSection(targetId);
+                });
+            });
+
+            // Mobile menu toggle
+            mobileMenuButton.addEventListener('click', function() {
+                navLinksContainer.classList.toggle('hidden');
+            });
+
+            // Initial load: show home section
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
+
